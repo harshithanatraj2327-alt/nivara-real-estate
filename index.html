@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover homes, apartments and villas with NIVARA.">
+  <title>NIVARA | Find a Place You'll Love to Call Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="NIVARA home"><span class="brand-mark">⌂</span><span>NIVARA</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a class="active" href="#home">Home</a><a href="#properties">Properties</a><a href="#buy">Buy</a><a href="#rent">Rent</a><a href="#sell">Sell Property</a><a href="#about">About</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="favorite-top" id="favoritesTop" aria-label="Show saved properties">♡ <span id="favoriteCount">0</span></button>
+      <a class="button button-primary header-cta" href="#properties">Get Started</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-shade"></div>
+      <div class="hero-copy">
+        <span class="eyebrow eyebrow-glass">PREMIUM LIVING</span>
+        <h1>Find a Place You'll <span>Love</span> to Call Home</h1>
+        <p>Explore homes, apartments, villas and properties that fit your lifestyle and budget.</p>
+        <div class="hero-buttons"><a class="button button-primary" href="#properties">Explore Properties</a><a class="button button-outline" href="#sell">List Your Property</a></div>
+      </div>
+      <form class="search-panel" id="searchForm">
+        <div class="field"><label for="location">Location</label><input id="location" name="location" placeholder="e.g. Bengaluru"></div>
+        <div class="field"><label for="type">Property Type</label><select id="type" name="type"><option value="">Any Type</option><option>Apartment</option><option>Villa</option><option>House</option><option>Plot</option><option>Commercial</option></select></div>
+        <div class="field"><label for="budget">Budget</label><select id="budget" name="budget"><option value="">Any Budget</option><option value="under1">Under ₹1 Cr</option><option value="1to3">₹1 Cr – ₹3 Cr</option><option value="over3">Above ₹3 Cr</option></select></div>
+        <div class="field"><label for="deal">Buy / Rent</label><select id="deal" name="deal"><option value="">Any</option><option>Buy</option><option>Rent</option></select></div>
+        <button class="button button-primary search-button" type="submit">Search Properties</button>
+      </form>
+    </section>
+
+    <section class="benefits section-wrap">
+      <article class="benefit-card"><span class="benefit-icon">✓</span><h3>Verified Properties</h3><p>Every listing is carefully reviewed for quality and reliability.</p></article>
+      <article class="benefit-card"><span class="benefit-icon">🔒</span><h3>Safe &amp; Secure</h3><p>We prioritize trust, transparency and a smooth property journey.</p></article>
+      <article class="benefit-card"><span class="benefit-icon">☎</span><h3>24/7 Support</h3><p>Friendly experts are ready to help you any time you need guidance.</p></article>
+      <article class="benefit-card"><span class="benefit-icon">☁</span><h3>Best Price Guarantee</h3><p>Find opportunities that balance value, comfort and long-term goals.</p></article>
+    </section>
+
+    <section class="section-wrap categories-section" id="properties">
+      <div class="section-heading"><div><span class="eyebrow">EXPLORE</span><h2>Explore Properties</h2></div><a class="text-link" href="#featured">Browse featured homes →</a></div>
+      <div class="category-grid">
+        <a class="category-card" href="#featured" data-category="Apartment"><img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=700&q=85" alt="Modern apartment building"><span>Apartments <b>→</b></span></a>
+        <a class="category-card" href="#featured" data-category="Villa"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=700&q=85" alt="Modern villa"><span>Villas <b>→</b></span></a>
+        <a class="category-card" href="#featured" data-category="House"><img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=700&q=85" alt="Independent house"><span>Independent Houses <b>→</b></span></a>
+        <a class="category-card" href="#featured" data-category="Plot"><img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=700&q=85" alt="Green land plot"><span>Plots <b>→</b></span></a>
+        <a class="category-card" href="#featured" data-category="Commercial"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=700&q=85" alt="Commercial buildings"><span>Commercial <b>→</b></span></a>
+      </div>
+    </section>
+
+    <section class="section-wrap about-section" id="about">
+      <div class="about-copy"><span class="eyebrow">WHY CHOOSE NIVARA</span><h2>More Than Just a Property</h2><p>NIVARA brings together buyers, renters and sellers through a modern platform designed to simplify every step of the property journey. We help people discover spaces that match their lifestyle and goals with confidence.</p>
+        <ul class="check-list"><li>Wide range of properties</li><li>Easy property search</li><li>Personalized recommendations</li><li>Simple and trusted experience</li></ul><a class="button button-primary" href="#contact">Learn More</a>
+      </div>
+      <div class="about-image"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1200&q=90" alt="Elegant, comfortable home interior"></div>
+    </section>
+
+    <section class="section-wrap featured-section" id="featured">
+      <div class="section-heading"><div><span class="eyebrow">FEATURED HOMES</span><h2>Featured Properties</h2></div><a class="text-link" href="#properties">View All Properties →</a></div>
+      <div class="property-grid" id="propertyGrid">
+        <article class="property-card" data-type="Apartment" data-deal="Buy" data-location="Bengaluru" data-budget="under1">
+          <div class="property-photo"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=900&q=85" alt="Bright apartment living room"><span class="property-tag">Featured</span><button class="heart-button" aria-label="Save Lakeview Residency">♡</button></div>
+          <div class="property-info"><span class="pill">Apartment</span><h3>Lakeview Residency</h3><p class="address">⌖ Bengaluru, Karnataka</p><strong class="price">₹86.0 L</strong><div class="property-stats"><span>🛏 3 Beds</span><span>▤ 2 Baths</span><span>1,520 sq ft</span></div><button class="details-link" data-title="Lakeview Residency">View Details →</button></div>
+        </article>
+        <article class="property-card" data-type="Villa" data-deal="Buy" data-location="Hyderabad" data-budget="over3">
+          <div class="property-photo"><img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=85" alt="Contemporary luxury villa"><span class="property-tag">New</span><button class="heart-button" aria-label="Save Royal Courtyard Villa">♡</button></div>
+          <div class="property-info"><span class="pill">Villa</span><h3>Royal Courtyard Villa</h3><p class="address">⌖ Hyderabad, Telangana</p><strong class="price">₹15.4 Cr</strong><div class="property-stats"><span>🛏 4 Beds</span><span>▤ 3 Baths</span><span>2,680 sq ft</span></div><button class="details-link" data-title="Royal Courtyard Villa">View Details →</button></div>
+        </article>
+        <article class="property-card" data-type="Apartment" data-deal="Rent" data-location="Mumbai" data-budget="under1">
+          <div class="property-photo"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85" alt="Stylish modern residence"><span class="property-tag">Hot Deal</span><button class="heart-button" aria-label="Save Sunrise Heights">♡</button></div>
+          <div class="property-info"><span class="pill">Apartment</span><h3>Sunrise Heights</h3><p class="address">⌖ Mumbai, Maharashtra</p><strong class="price">₹42,000/mo</strong><div class="property-stats"><span>🛏 2 Beds</span><span>▤ 2 Baths</span><span>1,120 sq ft</span></div><button class="details-link" data-title="Sunrise Heights">View Details →</button></div>
+        </article>
+      </div>
+      <p class="no-results" id="noResults" hidden>No properties match those filters. Try changing your search.</p>
+    </section>
+
+    <section class="process-section">
+      <div class="section-wrap"><div class="center-heading"><span class="eyebrow">SIMPLE PROCESS</span><h2>Find Your Dream Home in 3 Easy Steps</h2></div>
+        <div class="process-grid"><article class="process-card"><span class="step-number">01</span><h3>Search &amp; Explore</h3><p>Browse available properties and shortlist locations that match your goals.</p></article><article class="process-card"><span class="step-number">02</span><h3>Choose Your Property</h3><p>Compare homes, compare layouts and choose the one that feels right.</p></article><article class="process-card"><span class="step-number">03</span><h3>Move In &amp; Enjoy</h3><p>Connect with the owner or agent and continue your home-buying journey smoothly.</p></article></div>
+      </div>
+    </section>
+
+    <section class="section-wrap testimonials-section">
+      <div class="center-heading"><span class="eyebrow">TESTIMONIALS</span><h2>What Our Clients Say</h2></div>
+      <div class="testimonial-grid"><article class="testimonial-card"><div class="client"><span>AR</span><div><h3>Ananya Rao</h3><p>Bengaluru</p></div></div><div class="stars">★★★★★</div><blockquote>“The process felt simple and transparent. We found a beautiful apartment in a great neighborhood without any stress.”</blockquote></article><article class="testimonial-card"><div class="client"><span>VK</span><div><h3>Vikram Nair</h3><p>Hyderabad</p></div></div><div class="stars">★★★★★</div><blockquote>“NIVARA helped us compare multiple options quickly. The property details were clear and the support was genuinely helpful.”</blockquote></article><article class="testimonial-card"><div class="client"><span>PM</span><div><h3>Priya Menon</h3><p>Mumbai</p></div></div><div class="stars">★★★★★</div><blockquote>“A polished experience from start to finish. We could easily shortlist properties and connect with the right agent.”</blockquote></article></div>
+    </section>
+
+    <section class="cta-banner section-wrap" id="sell"><div><span class="eyebrow eyebrow-glass">READY TO BEGIN?</span><h2>Ready to Find Your Dream Home?</h2><p>Discover properties that match your lifestyle and budget with NIVARA.</p></div><a class="button button-primary" href="#contact">Get Started</a></section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="footer-main">
+      <div class="footer-brand"><a class="brand brand-light" href="#home"><span class="brand-mark">⌂</span><span>NIVARA</span></a><p>Helping people discover homes and investment opportunities that align with their lifestyle and future goals.</p></div>
+      <div class="footer-links"><h3>Explore</h3><a href="#home">Home</a><a href="#properties">Properties</a><a href="#about">About</a><a href="#contact">Contact</a><a href="#sell">Sell Property</a></div>
+      <div class="footer-links"><h3>Property</h3><a href="#buy">Buy</a><a href="#rent">Rent</a><a href="#properties">Apartments</a><a href="#properties">Villas</a></div>
+      <div class="footer-contact"><h3>Get in touch</h3><a href="mailto:hello@nivara.in">hello@nivara.in</a><a href="tel:+919876543210">+91 98765 43210</a><p>12 Lavender Avenue, Bengaluru</p><div class="socials"><a href="#contact" aria-label="Facebook">f</a><a href="#contact" aria-label="Instagram">◎</a><a href="#contact" aria-label="LinkedIn">in</a></div></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 NIVARA. All rights reserved.</span><span>Find Your Perfect Space.</span></div>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
